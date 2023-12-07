@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #112B3C;
+}
+
 .grid div {
     width: 100%;
     height: 100%;
@@ -27,10 +38,12 @@
     max-height: 266px;
 
 }
-.grid__item{
+
+.grid__item {
     display: flex;
     flex-direction: column-reverse;
 }
+
 .grid__title {
     display: flex;
     flex-direction: column;
@@ -63,8 +76,236 @@
     line-height: normal;
     margin: 0;
     margin-left: 10px;
-    
+
 }
+
+header {
+    height: 100px;
+    width: 100%;
+    background: rgba(15, 0, 4, 0.89);
+    backdrop-filter: blur(10.5px);
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navigation a {
+    width: 24px;
+    height: 24px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    width: 340px;
+    margin-left: 25px;
+
+}
+
+.navigation__menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+#casino {
+    color: var(--Yellow, #F2C94C);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#casino div {
+    width: 21px;
+    height: 3px;
+    border-radius: 40px;
+    background: var(--Yellow, #F2C94C);
+    margin-left: 18px;
+    margin-top: 9px;
+}
+
+#liveCasino {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#games {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.navigation__menu a {
+    text-decoration: none;
+}
+
+.MainLogoContainer {
+    width: 129.239px;
+    height: 129.239px;
+    transform: rotate(-45deg) translateX(-50px);
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #2B0303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.MainLogo {
+    width: 202px;
+    height: 202px;
+    rotate: 45deg;
+    text-shadow: 0px 7px 7px 0px #000, 0px 7px 4px 0px #000;
+}
+
+.registeLogin {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.registeLogin a {
+    text-decoration: none;
+}
+
+.register {
+    display: inline-flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1.5px solid var(--Yellow, #F2C94C);
+    margin-right: 10px;
+}
+
+.register p {
+    color: var(--Yellow, #F2C94C);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.login {
+    display: inline-flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--Yellow, #F2C94C);
+    margin-right: 10px;
+}
+
+.login p {
+    color: var(--Gray-1, #333);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.hero {
+    width: 100%;
+    height: 548px;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.hero__title :first-child {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 133.9%;
+    letter-spacing: 6.24px;
+}
+
+.hero__title {
+    margin-top: 100px;
+    margin-left: 26px;
+}
+
+.hero__title :nth-child(2) {
+    color: var(--Yellow, #F2C94C);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 133.9%;
+    letter-spacing: 6.24px;
+}
+
+.hero__text {
+    width: 613px;
+    margin-left: 26px;
+}
+
+.hero__text p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 133.9%;
+    letter-spacing: 1.28px;
+}
+
+.hero__button {
+    display: inline-flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--Yellow, #F2C94C);
+    text-decoration: none;
+    margin-left: 26px;
+}
+
+.hero__button p {
+    color: var(--Gray-1, #333);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
 
 @media screen and (max-width: 980px) {
 
@@ -77,6 +318,7 @@
 }
 
 @media screen and (max-width: 640px) {
+
     /* забирати ширину  */
     .grid {
         display: grid;
@@ -84,4 +326,68 @@
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: minmax(100px, auto);
     }
+}
+@import "compass/css3";
+
+.tabbed > input {
+  display: none;
+}
+
+.tabbed > label {
+  display: block;
+  float: left;
+  padding: 12px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.tabbed > label:hover,
+.tabbed > input:checked + label {
+  background: #F2C94C;
+}
+
+.tabs {
+  clear: both;
+  perspective: 600px;
+}
+
+.tabs > div {
+  width: 700px;
+  position: absolute;
+  border: 2px solid #F2C94C;
+  padding: 10px 30px 40px;
+  line-height: 1.4em;
+  opacity: 0;
+  transform: rotateX(-20deg);
+  transform-origin: top center;
+  transition: opacity .3s, transform 1s;
+  z-index: 0;
+}
+
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4){
+  transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .tabbed { width: 400px }
+  .tabbed > label { display: none }
+  .tabs > div {
+    width: 400px;
+    border: none;
+    padding: 0;
+    opacity: 1;
+    position: relative;
+    transform: none;
+    margin-bottom: 60px;
+  }
+  .tabs > div h2 {
+    border-bottom: 2px solid #F2C94C;
+    padding-bottom: .5em;
+  }
 }
