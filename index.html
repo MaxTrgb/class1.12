@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -78,14 +79,44 @@
         </section>
         <section class="tabsAndSearch">
             <div class="tabs-container">
-                <div class="tabs">
-                    <a href="#" class="tab">Featured<div class="tab-line"></div></a>
-                    <a href="#" class="tab">Slots<div class="tab-line"></div></a>
-                    <a href="#" class="tab">Table Games<div class="tab-line"></div></a>
-                    <a href="#" class="tab">New<div class="tab-line"></div></a>
-                    <a href="#" class="tab">Scratch Cards<div class="tab-line"></div></a>
-                    <a href="#" class="tab">Jackpots<div class="tab-line"></div></a>
-                </div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="featured-tab" data-toggle="tab" href="#featured">
+                            Featured
+                            <div class="tab-line"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="slots-tab" data-toggle="tab" href="#slots">
+                            Slots
+                            <div class="tab-line"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="table-games-tab" data-toggle="tab" href="#table-games">
+                            Table Games
+                            <div class="tab-line"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="new-tab" data-toggle="tab" href="#new">
+                            New
+                            <div class="tab-line"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="scratch-cards-tab" data-toggle="tab" href="#scratch-cards">
+                            Scratch Cards
+                            <div class="tab-line"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="jackpots-tab" data-toggle="tab" href="#jackpots">
+                            Jackpots
+                            <div class="tab-line"></div>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div class="search-container">
@@ -269,25 +300,34 @@
             </a>
         </div>
         <footer>
-            <div style="background-image: url(/assets/Rectangle\ 8.png)">
+            <div class="footer__container" style="background-image: url(/assets/Rectangle\ 8.png)">
                 <div class="flags">
                     <div style="background-image: url(/assets/Ellipse\ 3.svg);"></div>
                     <div style="background-image: url(/assets/Ellipse\ 3.svg);"></div>
                     <div style="background-image: url(/assets/Ellipse\ 3.svg);"></div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl iaculis vitae malesuada. Laoreet
-                    purus aliquam in netus sed. Amet, aliquam a tellus sit volutpat. Enim amet aliquet semper orci ipsum.
-                    Nulla augue magnis nunc in et quam urna, diam metus. Urna luctus pulvinar diam, eget a netus ullamcorper
-                    eu. Nisi purus rhoncus, id bibendum ut ut aliquam nulla nulla. Sed sed nunc pellentesque blandit diam
+                <p id="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl iaculis vitae malesuada. Laoreet
+                    purus aliquam in netus sed. Amet, aliquam a tellus sit volutpat. Enim amet aliquet semper orci
+                    ipsum.
+                    Nulla augue magnis nunc in et quam urna, diam metus. Urna luctus pulvinar diam, eget a netus
+                    ullamcorper
+                    eu. Nisi purus rhoncus, id bibendum ut ut aliquam nulla nulla. Sed sed nunc pellentesque blandit
+                    diam
                     turpis. Massa cursus risus f
-                    Quis pharetra, condimentum sodales augue id. Enim aliquam consectetur tellus diam. Sed vulputate aliquet
-                    vitae sit lacus, iaculis amet purus amet. Dui nunc eu, euismod suspendisse bibendum diam magna gravida
-                    enim. Posuere proin egestas sed bibendum. Proin pellentesque arcu felis quisque. Tristique sit at amet
+                    Quis pharetra, condimentum sodales augue id. Enim aliquam consectetur tellus diam. Sed vulputate
+                    aliquet
+                    vitae sit lacus, iaculis amet purus amet. Dui nunc eu, euismod suspendisse bibendum diam magna
+                    gravida
+                    enim. Posuere proin egestas sed bibendum. Proin pellentesque arcu felis quisque. Tristique sit at
+                    amet
                     sit pellentesqu</p>
             </div>
             <p>Copyright 2023 | LuckRoyel.com</p>
         </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
