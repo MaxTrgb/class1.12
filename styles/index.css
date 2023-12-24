@@ -61,6 +61,7 @@ body {
 }
 
 #ViewMore p {
+    margin: 0 !important;
     color: var(--Yellow, #F2C94C);
     font-family: Montserrat;
     font-size: 14px;
@@ -222,6 +223,9 @@ header {
 }
 
 .registeLogin {
+
+    margin: 0 !important;
+    padding: 0 !important;
     width: 250px;
     display: flex;
     align-items: center;
@@ -234,6 +238,7 @@ header {
 }
 
 .register {
+
     display: inline-flex;
     padding: 12px 20px;
     justify-content: center;
@@ -245,6 +250,7 @@ header {
 }
 
 .register p {
+    margin: 0 !important;
     color: var(--Yellow, #F2C94C);
     font-family: Montserrat;
     font-size: 14px;
@@ -256,6 +262,7 @@ header {
 }
 
 .login {
+
     display: inline-flex;
     padding: 12px 20px;
     justify-content: center;
@@ -267,6 +274,7 @@ header {
 }
 
 .login p {
+    margin: 0 !important;
     color: var(--Gray-1, #333);
     font-family: Montserrat;
     font-size: 14px;
@@ -331,6 +339,7 @@ header {
 }
 
 .hero__button {
+
     display: inline-flex;
     padding: 12px 20px;
     justify-content: center;
@@ -343,6 +352,7 @@ header {
 }
 
 .hero__button p {
+    margin: 0 !important;
     color: var(--Gray-1, #333);
     font-family: Montserrat;
     font-size: 14px;
