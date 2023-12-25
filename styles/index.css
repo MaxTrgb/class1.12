@@ -212,7 +212,7 @@ header {
 
 }
 
-.navigation a.burger-icon {
+.navigation a.burger-icon-reg-log {
     width: 24px;
     height: 24px;
 
@@ -283,7 +283,7 @@ header {
     color: var(--Gray-1, #333);
 }
 
-.burger-icon {
+.burger-icon-reg-log {
     width: 24px;
     height: 24px;
     display: none;
@@ -295,7 +295,7 @@ header {
         display: none;       
     }
 
-    .burger-icon {
+    .burger-icon-reg-log {
         display: block;
        
     }   
@@ -514,7 +514,7 @@ footer p {
 }
 
 @media only screen and (max-width: 980px) {
-    .navigation a.burger-icon {
+    .navigation a.burger-icon-reg-log {
         display: block;    
     }
 
@@ -732,7 +732,7 @@ footer p {
         grid-row: 1 / 1;
     }
 
-    .burger-icon{
+    .burger-icon-reg-log{
         margin-right: 30px;
     }
     .grid div:nth-child(7),
@@ -749,7 +749,7 @@ footer p {
     .MainLogoContainer{
         position: absolute;
         right: 100px;
-        position: static;
+       
     }
     .registeLogin a {
         display: none;
@@ -759,7 +759,7 @@ footer p {
         display: flex;
         flex-direction: column;
     }
-    .burger-icon{
+    .burger-icon-reg-log{
         margin-right: 20px;
     }
     .hero__text {
