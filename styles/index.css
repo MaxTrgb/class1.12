@@ -149,7 +149,6 @@ header {
     gap: 44px;
     width: 340px;
     margin-left: 25px;
-
 }
 
 .navigation__menu ul {
@@ -157,6 +156,7 @@ header {
     flex-direction: row;
     gap: 30px;
     text-decoration: none;
+    list-style: none;
 }
 
 #casino {
@@ -176,6 +176,7 @@ header {
     background: var(--Yellow, #F2C94C);
     margin-left: 18px;
     margin-top: 9px;
+
 }
 
 #liveCasino {
@@ -186,6 +187,7 @@ header {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+
 }
 
 #games {
@@ -198,8 +200,22 @@ header {
     text-transform: uppercase;
 }
 
+.navigation__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-decoration: none;
+}
+
 .navigation__menu a {
     text-decoration: none;
+
+}
+
+.navigation a.burger-icon {
+    width: 24px;
+    height: 24px;
+
 }
 
 .MainLogoContainer {
@@ -223,13 +239,11 @@ header {
 }
 
 .registeLogin {
-
     margin: 0 !important;
     padding: 0 !important;
     width: 250px;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
 }
 
@@ -237,52 +251,54 @@ header {
     text-decoration: none;
 }
 
-.register {
-
+.register,
+.login {
     display: inline-flex;
     padding: 12px 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    border: 1.5px solid var(--Yellow, #F2C94C);
     margin-right: 10px;
 }
 
-.register p {
+.register p,
+.login p {
     margin: 0 !important;
-    color: var(--Yellow, #F2C94C);
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+}
 
+.register {
+    border: 1.5px solid var(--Yellow, #F2C94C);
+    color: var(--Yellow, #F2C94C);
 }
 
 .login {
-
-    display: inline-flex;
-    padding: 12px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
     background: var(--Yellow, #F2C94C);
-    margin-right: 10px;
+    color: var(--Gray-1, #333);
 }
 
-.login p {
-    margin: 0 !important;
-    color: var(--Gray-1, #333);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+.burger-icon {
+    width: 24px;
+    height: 24px;
+    display: none;
+    cursor: pointer;
+}
 
+@media only screen and (max-width: 980px) {
+    .registeLogin a {
+        display: none;       
+    }
+
+    .burger-icon {
+        display: block;
+       
+    }   
 }
 
 .hero {
@@ -497,7 +513,28 @@ footer p {
     margin-bottom: 20px;
 }
 
-/* Add styles for 980px breakpoint */
+@media only screen and (max-width: 980px) {
+    .navigation a.burger-icon {
+        display: block;    
+    }
+
+    .navigation__menu {
+        display: none;        
+        flex-direction: column;
+        position: absolute;
+        top: 60px;        
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navigation__menu.show {
+        display: flex;       
+    }
+    
+}
+
 @media screen and (min-width: 641px) and (max-width: 980px) {
     header {
         height: 80px;
@@ -590,12 +627,11 @@ footer p {
         font-size: 13px;
         letter-spacing: -0.65px;
     }
+
+
 }
 
 @media screen and (min-width: 421px) and (max-width: 640px) {
-    .navigation__menu {
-        display: none;
-    }
 
     header {
         display: flex;
@@ -608,7 +644,7 @@ footer p {
     }
 
     .MainLogoContainer {
-        margin-right: 150px;
+        margin-right: 80px;
     }
 
     .tabsAndSearch {
@@ -696,7 +732,9 @@ footer p {
         grid-row: 1 / 1;
     }
 
-
+    .burger-icon{
+        margin-right: 30px;
+    }
     .grid div:nth-child(7),
     .grid div:nth-child(8),
     .grid div:nth-child(13),
@@ -708,37 +746,22 @@ footer p {
 
 @media screen and (max-width: 420px) {
 
-    .navigation__menu {
-        display: none;
+    .MainLogoContainer{
+        position: absolute;
+        right: 100px;
+        position: static;
     }
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-    }
-
-    .registeLogin {
-        width: 24px;
-        height: 24px;
-        flex-shrink: 0;
-        background-color: #2B0303;
-    }
-
     .registeLogin a {
         display: none;
-    }
-
-    .MainLogoContainer {
-        margin-right: 70px;
     }
 
     .tabsAndSearch {
         display: flex;
         flex-direction: column;
     }
-
+    .burger-icon{
+        margin-right: 20px;
+    }
     .hero__text {
         color: #FFF;
         text-align: center;

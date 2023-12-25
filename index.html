@@ -30,7 +30,7 @@
 <body>
     <header>
         <div class="navigation">
-            <a href="#">
+            <a href="#" class="burger-icon">
                 <img src="assets/element-4.png" alt="">
             </a>
             <nav class="navigation__menu">
@@ -47,10 +47,12 @@
                 </ul>
             </nav>
         </div>
+
         <a class="MainLogoContainer" href="#">
             <img class="MainLogo" src="assets/LuckRoyal 1.svg" alt="">
         </a>
         <div class="registeLogin">
+            
             <a href="#" class="register">
                 <p>Register</p>
             </a>
@@ -58,6 +60,17 @@
                 <p>Login</p>
             </a>
         </div>
+        
+        <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M8.90002 7.55999C9.21002 3.95999 11.06 2.48999 15.11 2.48999H15.24C19.71 2.48999 21.5 4.27999 21.5 8.74999V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54"
+                stroke="#F2C94C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M2 12H14.88" stroke="#F2C94C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12.65 8.65002L16 12L12.65 15.35" stroke="#F2C94C" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+
     </header>
     <main>
         <section style="background-image: url(assets/Rectangle\ 1.png);" class="hero">
@@ -306,7 +319,8 @@
                     <div style="background-image: url(/assets/Ellipse\ 3.svg);"></div>
                     <div style="background-image: url(/assets/Ellipse\ 3.svg);"></div>
                 </div>
-                <p id="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl iaculis vitae malesuada. Laoreet
+                <p id="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl iaculis vitae
+                    malesuada. Laoreet
                     purus aliquam in netus sed. Amet, aliquam a tellus sit volutpat. Enim amet aliquet semper orci
                     ipsum.
                     Nulla augue magnis nunc in et quam urna, diam metus. Urna luctus pulvinar diam, eget a netus
@@ -325,6 +339,27 @@
             <p>Copyright 2023 | LuckRoyel.com</p>
         </footer>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerIcon = document.querySelector('.burger-icon');
+            const registerLogin = document.querySelector('.registeLogin');
+
+            burgerIcon.addEventListener('click', function () {
+                registerLogin.classList.toggle('show');
+            });
+        });
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerIcon = document.querySelector('.burger-icon');
+            const navigationMenu = document.querySelector('.navigation__menu');
+
+            burgerIcon.addEventListener('click', function () {
+                navigationMenu.classList.toggle('show');
+            });
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
